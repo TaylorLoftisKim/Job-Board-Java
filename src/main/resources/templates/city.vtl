@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand">$city.getCityName() Job Openings:</a>
+      <a class="navbar-brand">$city.getCityName()</a>
     </div>
     <ul class="nav navbar-nav">
       #foreach($jobOpening in $city.getJobOpenings())
@@ -9,7 +9,7 @@
       #end
       <li><a href="/cities/$city.getId()/job-openings/new">Add a new Job</a></li>
       <li><a href="/cities">All cities</a></li>
-      <li><a href="/job-openings">Look at all Job Openings</a></li>
+      <li><a href="/job-openings">All Job Openings</a></li>
     </ul>
   </div>
 </nav>
