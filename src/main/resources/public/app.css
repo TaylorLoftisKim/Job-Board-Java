@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+body {
+  font-family: 'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #E6E6DC;
+  overflox-x: hidden;
+}
+
+img {
+  height: 200px;
+  width: 400px;
+}
+
+.navbar-brand {
+  font-size: 20pt;
+}

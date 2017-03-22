@@ -1,13 +1,17 @@
-<h1>Job Openings!</h1>
-
-#if ($jobOpenings)
-  <ul>
-    #foreach ($jobOpening in $jobOpenings)
-      <li><a href="/job-openings/$jobOpening.getId()">$jobOpening.getDescription()</a></li>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Job Openings!</a>
+    </div>
+    #if ($jobOpenings)
+    <ul class="nav navbar-nav">
+      #foreach ($jobOpening in $jobOpenings)
+        <li><a href="/job-openings/$jobOpening.getId()">$jobOpening.getDescription()</a></li>
+      #end
+      <li><a href="/cities">Add New Job</a></li>
+    </ul>
+    #else
+      <p>No job openings!</p>
     #end
-  </ul>
-#else
-  <p>No job openings!</p>
-#end
-
-<a href="/job-openings/new">Add New Job</a>
+  </div>
+</nav>
