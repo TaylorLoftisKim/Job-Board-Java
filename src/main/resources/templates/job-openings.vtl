@@ -1,0 +1,13 @@
+<h1>Job Openings!</h1>
+
+#if ($jobOpenings)
+  <ul>
+    #foreach ($jobOpening in $jobOpenings)
+      <li><a href="/job-openings/$jobOpening.getId()">$jobOpening.getDescription()</a></li>
+    #end
+  </ul>
+#else
+  <p>No job openings!</p>
+#end
+
+<a href="/job-openings/new">Add New Job</a>

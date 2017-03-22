@@ -1,0 +1,12 @@
+<h1>Add a new job opening to $city.getCityName()</h1>
+
+<form action="/job-openings" method="post">
+  <input id="cityId" name="cityId" type="hidden" value="$city.getId()">
+
+  <div class="form-group">
+    <label for="jobTitle">Job Title</label>
+    <input id="jobTitle" name="jobTitle" type="text" class="form-control">
+  </div>
+
+  <button type="submit" class="btn btn-success">Add Job</button>
+</form>

@@ -1,0 +1,10 @@
+<h1>$city.getCityName() Job Openings:</h1>
+
+<ul>
+  #foreach($jobOpening in $city.getJobOpenings())
+   <li>$jobOpening.getDescription()</li>
+  #end
+</ul>
+
+<a href="/cities/$city.getId()/job-openings/new">Add a new Job</a>
+<a href="/cities">All cities</a>
